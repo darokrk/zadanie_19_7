@@ -1,5 +1,5 @@
 import React from 'react';
-import Comment from './Comment.js';
+import Comment from '../containers/CommentContainer.js';
 
 const CommentsList = ({comments}) =>
     <ul>
