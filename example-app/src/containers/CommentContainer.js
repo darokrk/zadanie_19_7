@@ -3,13 +3,15 @@ import Comment from '../components/Comment';
 import {
     thumbUpComment,
     thumbDownComment,
-    editComment
+    editComment,
+    addComment
 } from '../actions/actions.js';
 
 const mapDispatchToProps = dispatch => ({
     thumbUpComment: (id) => dispatch(thumbUpComment(id)),
     thumbDownComment: (id) => dispatch(thumbDownComment(id)),
-    editComment: (text, id) => dispatch(editComment(text, id))
+    editComment: (text, id) => dispatch(editComment(text, id)),
+    addComment: (text) => dispatch(addComment(text))
 });
 
 export default connect(null, mapDispatchToProps)(Comment);

@@ -1,6 +1,7 @@
 import React from 'react';
+import { addComment } from '../actions/actions';
 
-const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, editComment}) =>
+const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, editComment, addComment}) =>
     <li>
         {text} <span>votes: {votes} </span>
         <button onClick={() => thumbUpComment(id)}>
@@ -11,9 +12,15 @@ const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, editComment
         </button>
         <button onClick={() => {
             var text = prompt('Edit comment');
-            editComment(text, id)
+            editComment(text, id);
         }}>
             Edit
+        </button>
+        <button onClick={() => {
+            var text = prompt('Write new comment');
+            addComment(text)
+        }}>
+            Add comment
         </button>
     </li>;
 
