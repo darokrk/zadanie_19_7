@@ -1,5 +1,4 @@
 import React from 'react';
-import { addComment } from '../actions/actions';
 
 const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, editComment, addComment}) =>
     <li>
