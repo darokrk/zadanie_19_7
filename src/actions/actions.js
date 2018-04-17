@@ -40,17 +40,15 @@ function thumbDownComment(id) {
     }
 }
 
-export {ADD_COMMENT};
-export {addComment};
-
-export {EDIT_COMMENT};
-export {editComment};
-
-export {REMOVE_COMMENT};
-export {removeComment};
-
-export {THUMB_UP_COMMENT};
-export {thumbUpComment};
-
-export {THUMB_DOWN_COMMENT};
-export {thumbDownComment};
+export {
+    ADD_COMMENT,
+    EDIT_COMMENT,
+    REMOVE_COMMENT,
+    THUMB_UP_COMMENT,
+    THUMB_DOWN_COMMENT,
+    addComment,
+    editComment,
+    removeComment,
+    thumbUpComment,
+    thumbDownComment
+};
