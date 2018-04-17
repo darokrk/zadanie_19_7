@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, editComment, addComment}) =>
+const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, editComment, addComment, removeComment}) =>
     <li>
         {text} <span>votes: {votes} </span>
         <button onClick={() => thumbUpComment(id)}>
@@ -20,6 +20,11 @@ const Comment = ({text, votes, id, thumbUpComment, thumbDownComment, editComment
             addComment(text)
         }}>
             Add comment
+        </button>
+        <button onClick={() => {
+            removeComment(id);
+        }}>
+            Remove
         </button>
     </li>;
 
